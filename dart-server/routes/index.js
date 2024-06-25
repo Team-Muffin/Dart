@@ -28,7 +28,6 @@ async function getCorpDetail(id, bsns_year, reprt_code, idx_cl_code){
 
   const resp = await axios.get(`https://opendart.fss.or.kr/api/fnlttSinglIndx.json?crtfc_key=${crtf_key}&corp_code=${id}&bsns_year=${bsns_year}&reprt_code=${reprt_code}&idx_cl_code=${idx_cl_code}`);
   console.log(resp.data)
-  console.log("fuck api")
   return resp.data;
 }
 
